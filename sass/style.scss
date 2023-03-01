@@ -1,5 +1,5 @@
 @import './colors';
-
+@import './animations';
 
 *,
 *::before,
@@ -13,42 +13,14 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.6rem;
+	color: $white;
+	background-color: $dark;
+
+	// font-family: 'Cinzel', serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// *************************
-// MEDIA
-// // *************************
-
-// @media (min-width: 576px) {
-	
-// }
-
-// @media (min-width: 768px) {
-	
-// }
-
-// @media (min-width: 992px) {
-	
-// }
+@import './small';
+@import './medium';
+@import './large';
