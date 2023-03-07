@@ -1,4 +1,15 @@
 @media (min-width: 992px) {
+	.section-title {
+		font-size: 4.8rem;
+		&::before {
+			height: 4px;
+		}
+	}
+
+	h1.company-name {
+		font-size: 6rem;
+	}
+
 	.header {
 		grid-template-rows: auto repeat(2, 1fr);
 
@@ -13,7 +24,8 @@
 		&__img {
 			grid-row: 1/4;
 			grid-column: 2/3;
-		}
+			background-image: url('../img/bitcoin-big.jpg');
+			}
 
 		&__arrow {
 			display: block;
@@ -71,7 +83,7 @@
 			&:hover::before {
 				animation: pulse 1s;
 			}
-	
+
 			&::before {
 				position: absolute;
 				top: 0;
@@ -87,5 +99,20 @@
 
 	.hamburger {
 		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__text {
+			p {
+				font-size: 2.2rem;
+			}
+		}
+	}
+
+
+	.gallery {
+		grid-template-columns: repeat(8, 1fr);
 	}
 }
